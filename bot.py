@@ -11,13 +11,13 @@ def pairs_trading_algo(self):
     #Specify paper trading environment
     os.environ["APCA_API_BASE_URL"] = "https://paper-api.alpaca.markets"
     #Insert API Credentials
-    api = tradeapi.REST('PKJXBRMNVFTZWUPR7I7S', '8C4Bcj5WJfpm5Lpayl4EmZKJIRf3sSimKV5lRql8', api_version='v2') # or use ENV Vars shown below
+    api = tradeapi.REST('consumer key', 'secret key', api_version='v2') # or use ENV Vars shown below
     account = api.get_account()
 
     #The mail addresses and password
-    sender_address = 'mwzhu2002@gmail.com'
-    sender_pass = '!Welcome123'
-    receiver_address = 'michaelzhu2002@gmail.com'
+    sender_address = ''
+    sender_pass = ''
+    receiver_address = ''
     #Setup the MIME
     message = MIMEMultipart()
     message['From'] = 'Trading Bot'
